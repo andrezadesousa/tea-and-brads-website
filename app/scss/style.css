@@ -579,6 +579,87 @@ button {
           transform: translateX(0.25rem);
 }
 
+/* about */
+.about__container {
+  padding-bottom: 2rem;
+}
+
+.about__content {
+  row-gap: 3rem;
+}
+
+.about__image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.about__img {
+  border-radius: .5rem;
+}
+
+.about__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #fff;
+  padding: 1.15rem;
+  border-radius: .5rem 0 .5rem 0;
+  font-size: 2rem;
+  color: var(--title-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.about__button i {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.about__button:hover i {
+  -webkit-transform: rotate(-30deg) translateX(0.25rem);
+          transform: rotate(-30deg) translateX(0.25rem);
+}
+
+.about__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.about__description {
+  margin-bottom: 1.5rem;
+}
+
+.about__footer,
+.about__reaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__footer {
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.about__reaction {
+  -webkit-column-gap: .25rem;
+          column-gap: .25rem;
+}
+
+.about__reaction i {
+  font-size: 1.25rem;
+}
+
+.about__reaction span {
+  font-size: var(--small-font-size);
+}
+
 /* Footer */
 .footer {
   padding: 4rem 0 2.5rem;
@@ -762,6 +843,13 @@ button {
     -ms-grid-columns: (200px)[2];
         grid-template-columns: repeat(2, 200px);
     padding-bottom: 3rem;
+  }
+  .about__content {
+    -ms-grid-columns: 450px;
+        grid-template-columns: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__newsletter {
     width: 350px;
@@ -951,6 +1039,16 @@ button {
   }
   .quality__special {
     margin-bottom: 1rem;
+  }
+  .about__container {
+    padding-bottom: 5rem;
+  }
+  .about__content {
+    -ms-grid-columns: (450px)[2];
+        grid-template-columns: repeat(2, 450px);
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+    padding-top: 2rem;
   }
   .footer__content {
     -ms-grid-columns: (max-content)[4];

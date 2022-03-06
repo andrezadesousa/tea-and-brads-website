@@ -28,6 +28,11 @@
         padding-bottom: 3rem;
     }
 
+    .about__content{
+        grid-template-columns: 450px;
+        justify-content: center;
+    }
+
     .footer__newsletter{
         width: 350px;
     }
@@ -228,6 +233,16 @@
 
     .quality__special{
         margin-bottom: 1rem;
+    }
+
+    .about__container{
+        padding-bottom: 5rem;
+    }
+
+    .about__content{
+        grid-template-columns: repeat(2, 450px);
+        column-gap: 5rem;
+        padding-top: 2rem;
     }
 
     .footer__content{
